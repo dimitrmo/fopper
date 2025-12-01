@@ -16,6 +16,7 @@ customElements.define('hero-component', HeroComponent);
 // Attach component and set data
 const component = document.createElement('hero-component');
 component.setAttribute('data', JSON.stringify(data));
+component.setAttribute('config', JSON.stringify({}));
 document.body.appendChild(component);
 const output = component.innerHTML;
 
